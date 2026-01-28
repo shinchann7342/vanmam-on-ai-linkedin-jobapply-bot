@@ -2,10 +2,11 @@
 
 This is the first step of expressing my pure hate towards AI job screening stuff that companies use to "screen" our application without even a human looking into it. We shouldn't take sticks and stones to a sword fight, right? So, here I am with a sword.
 
-<<<<<<< HEAD
+
 ## Why this started? 
 I once got a rejection mail for a job even before i got the application acknowledgement mail and that was the beginning of my Villan Arc, i felt a lot of emotions that day is my application not even worthy enough for a human to read? why can't a recruiter review the applications themselves, and then i realized something, yes they might be getting a lot of applications and they might not have the time to review them all, so i thought "If it is okay for recruiters to review and reject my application with AI then it should be okay for me to apply to the jobs with an AI right?" and so it began. and also one more thing, I thought why do recruiters post jobs in Entry Level with 8-9 Years of experience shouldn't entry level be 0-2 Years ? it has always frustated me and dont even get me started on ghost hiring, so here I'm where injustice prevails, a man caped in black, fighting the darkness, I'm Justice, I'm Batman 😅. aight enough story lets get to the point.
 
+<<<<<<< HEAD
 =======
 >>>>>>> 2d76ef7ba5ef5c17634a537851eef46f3f75ea8b
 ## How to Run?
@@ -34,3 +35,4 @@ I once got a rejection mail for a job even before i got the application acknowle
 Bro, the app is running locally; I'm not collecting any data. Ah yes, about the API key and Years of Experience? That's a future implementation I'm working on, or probably I implemented it, I might not have updated this README... IDK, I'm writing it at 3:00 in the morning so I guess that's it. Happy job hunting.
 
 Subscribe to my channel if you like tech, gaming, and other stuff: [https://www.youtube.com/@schinchannGT](https://www.youtube.com/@schinchannGT) (wannabe Linus Tech Tips in Tamil)
+
