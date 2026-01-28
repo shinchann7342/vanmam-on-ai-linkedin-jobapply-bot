@@ -1,0 +1,6 @@
+If you are new to programming then this is for you, if you are a veteran programmer please refer the README.md file
+
+Step 1: Install Python 3 in your PC -> Download it from python.org
+Step 2: double click and run the "first_run.bat" if you are running this app for the FIRST TIME(only)
+Step 3: ERROR occurred? TRY TO RUN THE "run.bat" file
+Step 4: running for the second time RUN THE "run.bat" file only

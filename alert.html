@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚠️ Critical Error</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 10px;
+            border: 2px solid #ff4b4b;
+            box-shadow: 0 0 20px rgba(255, 75, 75, 0.4);
+            max-width: 500px;
+        }
+        h1 { color: #ff4b4b; font-size: 3rem; margin: 0; }
+        p { font-size: 1.2rem; margin-top: 20px; line-height: 1.6; }
+        .highlight { color: #ff9999; font-weight: bold; }
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background-color: #ff4b4b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn:hover { background-color: #d43f3f; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚠️ ERROR</h1>
+        <p>The application encountered an unexpected issue and had to stop.</p>
+        
+        <p>If this is the <span class="highlight">first time</span> you are running this app, you likely missed the configuration step.</p>
+        
+        <p>Please close this and run <strong class="highlight" color: #ff4b4b background-color: #ff4b4b >first_run.bat</strong> to generate the necessary data files.</p>
+
+        <p>If its not the first time then please try running <strong class="highlight" color: #ff4b4b background-color: #ff4b4b >run.bat</strong> again as it might have likely encountered a network or performance issue </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evil Bot Configuration</title>
+    <style>
+        /* Dark Theme Setup */
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            background-color: #121212; 
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        .container { 
+            width: 100%;
+            max-width: 500px; 
+            background: #1e1e1e; 
+            padding: 30px 40px; 
+            border-radius: 12px; 
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5); 
+            border: 1px solid #333;
+        }
+
+        h2 { 
+            text-align: center; 
+            color: #ff4b4b; 
+            font-size: 28px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .form-group { margin-bottom: 20px; }
+        
+        label { 
+            display: block; 
+            margin-bottom: 8px; 
+            font-weight: 600; 
+            color: #b0b0b0; 
+            font-size: 14px;
+        }
+        
+        input { 
+            width: 100%; 
+            padding: 12px; 
+            background-color: #2d2d2d; 
+            border: 1px solid #444; 
+            border-radius: 6px; 
+            color: #fff;
+            font-size: 15px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        input:focus { 
+            border-color: #ff4b4b; 
+            outline: none; 
+            box-shadow: 0 0 8px rgba(255, 75, 75, 0.3); 
+        }
+
+        button { 
+            width: 100%; 
+            padding: 14px; 
+            background: linear-gradient(135deg, #cb2d3e, #ef473a); 
+            color: white; 
+            border: none; 
+            border-radius: 6px; 
+            font-size: 16px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            transition: transform 0.2s, box-shadow 0.2s; 
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+        
+        button:hover { 
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(239, 71, 58, 0.4);
+        }
+
+        button:active { transform: translateY(0); }
+
+        .helper-text {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+        
+        .helper-link {
+            color: #ff4b4b;
+            text-decoration: none;
+            border-bottom: 1px dashed #ff4b4b;
+            transition: color 0.2s;
+        }
+        
+        .helper-link:hover { 
+            color: #ff8888; 
+            border-bottom: 1px solid #ff8888;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #333;
+            margin: 25px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form action="/submit" method="POST">
+        <h2>😈 Evil Bot Setup</h2>
+        
+        <div class="form-group">
+            <label>API Key</label>
+            <input type="text" name="api_key" placeholder=" ">
+        </div>
+
+        <div class="form-group">
+            <label>LinkedIn Username / Email *</label>
+            <input type="text" name="user_id" placeholder=" " required>
+        </div>
+
+        <div class="form-group">
+            <label>Password *</label>
+            <input type="password" name="password" placeholder=" " required>
+        </div>
+
+        <div class="form-group">
+            <label>Target Roles *</label>
+            <input type="text" name="roles" placeholder=" " required>
+        </div>
+
+        <div class="form-group">
+            <label>Resume File Path (Optional)</label>
+            <input type="text" name="resume_path" placeholder=" " >
+        </div>
+
+        <div class="form-group" style="display: flex; gap: 15px;">
+            <div style="flex: 1;">
+                <label>Years Exp (Optional)</label>
+                <input type="number" name="years" placeholder=" " min="0">
+            </div>
+            <div style="flex: 1;">
+                <label>Months Exp (Optional)</label>
+                <input type="number" name="months" placeholder=" " min="0" max="11">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Profile Links (Optional)</label>
+            <input type="text" name="links" placeholder=" " >
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="helper-text">
+            <span>Confused about the Token?</span><br>
+            <a href="https://youtu.be/l5YDtSLGhqk?si=W92w_Nl6mfcgomID" target="_blank" class="helper-link">
+                Watch: How to create a Telegram bot
+            </a>
+        </div>
+
+        <div class="form-group">
+            <label>Telegram Token (Optional)</label>
+            <input type="text" name="telegram_token" placeholder=" ">
+        </div>
+
+        <div class="form-group">
+            <label>Chat ID (Optional)</label>
+            <input type="text" name="chat_id" placeholder=" ">
+        </div>
+
+        <button type="submit">Vanmam ON</button>
+    </form>
+</div>
+
+</body>
+</html>
