@@ -17,6 +17,8 @@ I once got a rejection mail for a job even before i got the application acknowle
 
 3. Once your details are captured in `first_run.bat`, this app should do its job (i.e., getting you a job 😂... aight, jokes apart). This app will open a Selenium window and execute the code which automatically applies for the LinkedIn jobs which has EasyApply enabled and no other jobs.
 
+    > **PS:** I hope you have already applied for a few jobs on linkedin for which you might have filled in your details along with your updated resume, try to update these details on linkedin itself and check if you have your updated resume on LinkedIn before starting the app.
+
 4. Don't worry, you don't have to run the `first_run.bat` every time. Instead, once your details are filled, you can run the `run.bat` file every time you want to run this application.
 
 5. If the app fails or an error is encountered, check the following:
@@ -33,6 +35,7 @@ I once got a rejection mail for a job even before i got the application acknowle
 Bro, the app is running locally; I'm not collecting any data. Ah yes, about the API key and Years of Experience? That's a future implementation I'm working on, or probably I implemented it, I might not have updated this README... IDK, I'm writing it at 3:00 in the morning so I guess that's it. Happy job hunting.
 
 Subscribe to my channel if you like tech, gaming, and other stuff: [https://www.youtube.com/@schinchannGT](https://www.youtube.com/@schinchannGT) (wannabe Linus Tech Tips in Tamil)
+
 
 
 
