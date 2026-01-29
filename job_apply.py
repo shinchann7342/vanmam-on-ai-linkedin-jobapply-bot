@@ -81,7 +81,7 @@ def job_apply():
             button = driver.find_element(By.ID, "jobs-apply-button-id")
             button.click()
         except:
-            send_message('error')
+            print('\n Moving On...')
             
 
 #--------------------------------------------------
@@ -149,7 +149,7 @@ def main():
                     job_apply()
                 except:
                     try:
-                        send_message("error")
+                        #send_message("error")
                         driver.refresh()
                         time.sleep(10)
                         dismiss()
@@ -229,6 +229,6 @@ for i in range(max_pg):
     next_button = driver.find_element(By.XPATH, "//*[@aria-label='View next page']")
     next_button.click()
     time.sleep(5)
-
+send_message(f"""Total Number of Jobs Applied: {tot}""")
 
 print("Stuff works")
