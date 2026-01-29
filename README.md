@@ -29,12 +29,18 @@ I once got a rejection mail for a job even before i got the application acknowle
 
 6. If you want the Telegram notifications for the jobs that got applied, then you have to fill in the chat ID and Bot token. I have given the link to it in the app itself... aight, IK patience is not our strength for many of us (guilty myself). Here you go, here is the link: [https://youtu.be/l5YDtSLGhqk?si=W92w_Nl6mfcgomID](https://youtu.be/l5YDtSLGhqk?si=W92w_Nl6mfcgomID)
 
+## Known Issues:
+1. The app may sometimes get stuck on the application part, you can either restart the application manually or Use the Telegram Bot Functionality (ie. send "Restart" message from your Telegram Bot).
+
+2. Same applies for ending the current execution (ie. send "End" message from your telegram bot to end the current execution)
+
 > **Note:** Yes, I know my app is following a brute-force approach which is not ideal but hey, first rule of programming: "if it works, don't touch it."
 
 ### Data Collection
 Bro, the app is running locally; I'm not collecting any data. Ah yes, about the API key and Years of Experience? That's a future implementation I'm working on, or probably I implemented it, I might not have updated this README... IDK, I'm writing it at 3:00 in the morning so I guess that's it. Happy job hunting.
 
 Subscribe to my channel if you like tech, gaming, and other stuff: [https://www.youtube.com/@schinchannGT](https://www.youtube.com/@schinchannGT) (wannabe Linus Tech Tips in Tamil)
+
 
 
 
