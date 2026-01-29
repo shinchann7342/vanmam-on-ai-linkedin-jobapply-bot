@@ -231,4 +231,4 @@ for i in range(max_pg):
     time.sleep(5)
 
 
-print("shit works")
+print("Stuff works")
