@@ -92,6 +92,12 @@
             margin-bottom: 15px;
             font-size: 13px;
         }
+
+        .schinchann-text {
+            text-align: right;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
         
         .helper-link {
             color: #ff4b4b;
@@ -131,6 +137,18 @@
             margin-bottom: 0;
             cursor: pointer;
         }
+        .source-footer {
+            text-align: right;
+            font-size: 9px;
+            color: #666;
+            margin-top: 10px; /* Space between button and link */
+            display: block;
+            text-decoration: none;
+        }
+
+.source-footer:hover {
+    color: #ff4b4b;
+}
 
     </style>
 </head>
@@ -139,6 +157,11 @@
 <div class="container">
     <form action="/submit" method="POST">
         <h2>Bot Setup 🚀</h2>
+        <div class="schinchann-text">
+            <a href="https://www.youtube.com/@schinchannGT/videos" target="_blank" class="helper-link">
+                created by Schinchann
+            </a>
+        </div>
 
         <div class="form-group" visibility: hidden>
             <label>Gemini API Key (Optional)</label>
@@ -216,8 +239,12 @@
         </div>
 
         <button type="submit">Vanmam ON</button>
+        <a href="https://github.com/shinchann7342/vanmam-on-ai-linkedin-jobapply-bot" target="_blank" class="source-footer">
+            source: https://github.com/shinchann7342
+        </a>
     </form>
 </div>
+
 
 <script>
     // JavaScript to handle the checkbox toggle
@@ -247,6 +274,8 @@
         }
     });
 </script>
+
+
 
 </body>
 </html>
