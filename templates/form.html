@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evil Bot Configuration</title>
+    <title>Setup</title>
     <style>
         /* Dark Theme Setup */
         body { 
@@ -110,77 +110,143 @@
             background-color: #333;
             margin: 25px 0;
         }
+
+        .mandatory{
+             color: #ff4b4b;
+        }
+        
+        /* Specific style for the checkbox container */
+        .checkbox-group {
+            display: flex; 
+            align-items: center; 
+            gap: 10px;
+        }
+        
+        .checkbox-group input {
+            width: auto; /* Override the 100% width from general input style */
+            margin: 0;
+        }
+        
+        .checkbox-group label {
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
 
 <div class="container">
     <form action="/submit" method="POST">
-        <h2>😈 Evil Bot Setup</h2>
-        
-        <div class="form-group">
-            <label>API Key</label>
-            <input type="text" name="api_key" placeholder=" ">
+        <h2>Bot Setup 🚀</h2>
+
+        <div class="form-group" visibility: hidden>
+            <label>Gemini API Key (Optional)</label>
+            <input type="text" name="api_key" placeholder="Reserved for Future Implementation">
         </div>
 
         <div class="form-group">
-            <label>LinkedIn Username / Email *</label>
-            <input type="text" name="user_id" placeholder=" " required>
+            <label>LinkedIn Email / Username 
+                 <span class="mandatory">*</span>
+            </label>
+            <input type="text" name="user_id" placeholder="Email / Username" required>
         </div>
 
         <div class="form-group">
-            <label>Password *</label>
-            <input type="password" name="password" placeholder=" " required>
+            <label>
+                Password <span class="mandatory">*</span>
+            </label>
+            <input type="password" name="password" placeholder="●●●●●●●●" required>
         </div>
 
         <div class="form-group">
-            <label>Target Roles *</label>
-            <input type="text" name="roles" placeholder=" " required>
+            <label>Target Roles 
+                 <span class="mandatory">*</span>
+            </label>
+            <input type="text" name="roles" placeholder="Eg. Data Analyst,Python Developer..." required>
         </div>
 
-        <div class="form-group">
+        <div class="form-group" visibility: hidden>
             <label>Resume File Path (Optional)</label>
-            <input type="text" name="resume_path" placeholder=" " >
+            <input type="text" name="resume_path" placeholder="Reserved for Future Implementation" >
         </div>
 
-        <div class="form-group" style="display: flex; gap: 15px;">
-            <div style="flex: 1;">
+        <div class="form-group" style="display: flex; gap: 15px;" visibility: hidden>
+            <div style="flex: 1;" visibility: hidden>
                 <label>Years Exp (Optional)</label>
-                <input type="number" name="years" placeholder=" " min="0">
+                <input type="number" name="years" placeholder="Reserved for Future Implementation" min="0">
             </div>
-            <div style="flex: 1;">
+            <div style="flex: 1;" visibility: hidden>
                 <label>Months Exp (Optional)</label>
-                <input type="number" name="months" placeholder=" " min="0" max="11">
+                <input type="number" name="months" placeholder="Reserved for Future Implementation" min="0" max="11">
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group" visibility: hidden>
             <label>Profile Links (Optional)</label>
-            <input type="text" name="links" placeholder=" " >
+            <input type="text" name="links" placeholder="Reserved for Future Implementation" >
         </div>
 
         <div class="divider"></div>
 
         <div class="helper-text">
-            <span>Confused about the Token?</span><br>
+            <span>Confused ? Click Link Below ⬇️</span><br>
             <a href="https://youtu.be/l5YDtSLGhqk?si=W92w_Nl6mfcgomID" target="_blank" class="helper-link">
-                Watch: How to create a Telegram bot
+                Watch: How to create a Telegram bot & Chat ID
             </a>
         </div>
 
-        <div class="form-group">
-            <label>Telegram Token (Optional)</label>
-            <input type="text" name="telegram_token" placeholder=" ">
+        <div class="form-group checkbox-group">
+            <label for="enable_telegram">Enable Telegram Notifications</label>
+            <input type="checkbox" id="enable_telegram">
         </div>
 
         <div class="form-group">
-            <label>Chat ID (Optional)</label>
-            <input type="text" name="chat_id" placeholder=" ">
+            <label id="label_telegram_token">Telegram Token (Optional)</label>
+            <input type="text" name="telegram_token" id="input_telegram_token" placeholder="Enter Bot Token (from botfather)">
+        </div>
+
+        <div class="form-group">
+            <label id="label_chat_id">Chat ID (Optional)</label>
+            <input type="text" name="chat_id" id="input_chat_id" placeholder="Enter Chat ID(refer link above)">
+        </div>
+        
+        <div class="mandatory">
+            <p >* Mandatory fields</p>
         </div>
 
         <button type="submit">Vanmam ON</button>
     </form>
 </div>
+
+<script>
+    // JavaScript to handle the checkbox toggle
+    const telegramCheckbox = document.getElementById('enable_telegram');
+    const tokenInput = document.getElementById('input_telegram_token');
+    const chatInput = document.getElementById('input_chat_id');
+    const tokenLabel = document.getElementById('label_telegram_token');
+    const chatLabel = document.getElementById('label_chat_id');
+
+    telegramCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            // Make fields mandatory
+            tokenInput.required = true;
+            chatInput.required = true;
+            
+            // Update labels to show red asterisk
+            tokenLabel.innerHTML = 'Telegram Token <span class="mandatory">*</span>';
+            chatLabel.innerHTML = 'Chat ID <span class="mandatory">*</span>';
+        } else {
+            // Make fields optional
+            tokenInput.required = false;
+            chatInput.required = false;
+            
+            // Revert labels
+            tokenLabel.innerHTML = 'Telegram Token (Optional)';
+            chatLabel.innerHTML = 'Chat ID (Optional)';
+        }
+    });
+</script>
 
 </body>
 </html>

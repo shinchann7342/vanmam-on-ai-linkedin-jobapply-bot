@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # File constants
 DATA_FILE = "user_config.txt"
-BOT_SCRIPT = "job_apply.py"
+BOT_SCRIPT = "telegram_manager.py"
 
 def open_browser():
     """Opens the default web browser to the correct URL"""

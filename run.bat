@@ -7,9 +7,8 @@ echo ==================================================
 echo      STARTING JOB APPLICATION PROTOCOL...
 echo ==================================================
 echo.
-
-:: Try to run the bot script
-python job_apply.py
+:: Try to run the manager script
+python telegram_manager.py
 
 :: Check if the previous command failed (Error Level not equal to 0)
 IF %ERRORLEVEL% NEQ 0 (
