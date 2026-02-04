@@ -9,7 +9,7 @@ I once got a rejection mail for a job even before i got the application acknowle
 
 ## How to Run?
 
-1. This app requires you to have Python 3 at least. Download the latest version of Python from [https://www.python.org](https://www.python.org).
+1. This app requires you to have Python 3 at least. Download the latest version of Python from [https://www.python.org](https://www.python.org). and [google chrome](https://www.google.com/chrome/?brand=OZZY&ds_kid=44650692317&gclsrc=aw.ds&gad_source=1&gad_campaignid=23325331380&gbraid=0AAAAAoY3CA5tBzMVpS2eVS5eNYHhEJLF5&gclid=Cj0KCQiA-YvMBhDtARIsAHZuUzLYe9IT_Ll4-JeIkMSp7A00ZMvuq8LkBLKjXaHNvrLfDTsR5PzBB94aAvWwEALw_wcB) 
 
 2. You need to run `first_run.bat` and give it your credentials (don't worry, everything stays in your system; you can give your details).
    
@@ -40,6 +40,7 @@ I once got a rejection mail for a job even before i got the application acknowle
 Bro, the app is running locally; I'm not collecting any data. Ah yes, about the API key and Years of Experience? That's a future implementation I'm working on, or probably I implemented it, I might not have updated this README... IDK, I'm writing it at 3:00 in the morning so I guess that's it. Happy job hunting.
 
 Subscribe to my channel if you like tech, gaming, and other stuff: [https://www.youtube.com/@schinchannGT](https://www.youtube.com/@schinchannGT) (wannabe Linus Tech Tips in Tamil)
+
 
 
 
